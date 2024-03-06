@@ -60,6 +60,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Clear npm cache
+        run: npm cache clean -f
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
