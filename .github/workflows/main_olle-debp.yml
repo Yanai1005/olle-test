@@ -63,6 +63,9 @@ jobs:
       - name: Clear npm cache
         run: npm ci --cache /path/to/your/npm-cache --prefer-offline
 
+      - name: Clear npm cache
+        run: npm ci --prefer-offline
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -72,7 +75,8 @@ jobs:
 
       - name: npm install, npm run build
         run: |
-          npm ci --cache /path/to/your/npm-cache --prefer-offline
+          rm -rf node_modules
+          npm install --prefer-offline
           npm run build
 
       - name: Upload artifact for deployment job
