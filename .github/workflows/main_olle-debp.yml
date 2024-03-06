@@ -61,11 +61,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Clear npm cache
+      - name: Clear npm cache and install dependencies
         run: |
           rm -rf node_modules
           rm -f package-lock.json
-          npm ci --prefer-offline
+          npm install --prefer-offline
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
