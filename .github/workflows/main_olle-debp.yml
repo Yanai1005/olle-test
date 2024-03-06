@@ -70,10 +70,16 @@ jobs:
           cache: "npm"
           cache-dependency-path: ./package-lock.json
 
+      - name: Check if package-lock.json exists
+        id: check_files
+        run: '[ -f "package-lock.json" ] && echo "File exists" || echo "File does not exist"'
+
+      - name: Generate package-lock.json if not exists
+        run: npm install
+
       - name: npm install, npm run build
         run: |
-          rm -rf node_modules
-          npm install --prefer-offline
+          npm ci --prefer-offline
           npm run build
 
       - name: Upload artifact for deployment job
