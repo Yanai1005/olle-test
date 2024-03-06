@@ -54,35 +54,24 @@ jobs:
         with:
           name: php-app
           path: release.zip
+
   node_build:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - uses: actions/checkout@v3
 
-      - name: Clear npm cache
-        run: npm cache clean -f
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
           cache: "npm"
           cache-dependency-path: ./package-lock.json
-
-      - name: Check if package-lock.json exists
-        id: check_files
-        run: '[ -f "package-lock.json" ] && echo "File exists" || echo "File does not exist"'
-
-      - name: Generate package-lock.json if not exists
-        run: npm install
-
       - name: npm install, npm run build
         run: |
-          npm ci --prefer-offline
+          npm install
           npm run build
-
-      - name: Upload artifact for deployment job
+      - name: upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
