@@ -1,0 +1,19 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+      "node_modules{,/**}",
+      "vendor{,/**}",
+      "public/assets/home{,/**}",
+      "public/page-cache{,/**}",
+      ".vscode{,/**}",
+      ".editorconfig{,/**}",
+      ".env.example{,/**}",
+      ".gitattributes{,/**}",
+      ".gitignore{,/**}",
+      ".styleci.yml{,/**}",
+      ".user.ini{,/**}",
+      "*.sql{,/**}",
+      "README.md{,/**}",
+      "docker_tag{,/**}"
+    ]
+  }
