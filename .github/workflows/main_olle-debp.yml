@@ -89,7 +89,7 @@ jobs:
           npm ci --production
 
       - name: Zip artifact for deployment
-        run: zip -r node-app.zip . -x .github/\* .git/\*
+        run: zip -r node-app.zip .
 
       - name: upload artifact for deployment job
         uses: actions/upload-artifact@v2
