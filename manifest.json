@@ -1,24 +1,24 @@
 {
-    "short_name": "App short name",
-    "name": "App name",
-    "background_color": "#fff",
-    "theme_color": "#fff",
+    "short_name": "olle",
+    "name": "olle",
+    "background_color": "#EDE8E2",
+    "theme_color": "#308C6E",
     "display": "standalone",
     "scope": "/",
-    "start_url": "/?source=pwa",
+    "start_url": "/",
     "icons": [
       {
-        "src": "images/launcher-icon-1x.png",
+        "src": "olle-icon.png",
         "type": "image/png",
         "sizes": "48x48"
       },
       {
-        "src": "images/launcher-icon-2x.png",
+        "src": "olle-icon.png",
         "type": "image/png",
         "sizes": "96x96"
       },
       {
-        "src": "images/launcher-icon-3x.png",
+        "src": "olle-icon.png",
         "type": "image/png",
         "sizes": "192x192"
       }
