@@ -87,7 +87,7 @@ jobs:
           npm run build
 
       - name: Zip artifact for deployment
-        run: zip -r node-app.zip . -x node_modules/\* .git/\*
+        run: zip -r node-app.zip . -x .github/\* .git/\*
 
       - name: upload artifact for deployment job
         uses: actions/upload-artifact@v2
