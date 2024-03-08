@@ -45,15 +45,15 @@ workbox.routing.registerRoute(
 );
 
 // offline pages
-// workbox.routing.registerRoute(
-//     new RegExp('/(article/3)$'), 
-//     workbox.strategies.staleWhileRevalidate({
-//         cacheName: 'pages',
-//         plugins: [
-//             new workbox.expiration.Plugin({
-//                 maxEntries: 20,
-//                 purgeOnQuotaError: true,
-//             })
-//         ]
-//     })
-// );
+workbox.routing.registerRoute(
+    new RegExp(), 
+    workbox.strategies.staleWhileRevalidate({
+        cacheName: 'pages',
+        plugins: [
+            new workbox.expiration.Plugin({
+                maxEntries: 20,
+                purgeOnQuotaError: true,
+            })
+        ]
+    })
+);

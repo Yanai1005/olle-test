@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/home.css">
+  <link rel="manifest" href="/pwa/manifest.json">
   <title>olle / オルレ -「さんぽ」を手助けするwebサービス-</title>
 </head>
 
