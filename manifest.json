@@ -1,0 +1,26 @@
+{
+    "short_name": "App short name",
+    "name": "App name",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/?source=pwa",
+    "icons": [
+      {
+        "src": "images/launcher-icon-1x.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "images/launcher-icon-2x.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "images/launcher-icon-3x.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ]
+  }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/flags.css') }}">
     <link rel="stylesheet" href="{{ asset('css/map-menu.css') }}">
+    <link rel="manifest" href="/manifest.json">
   </head>
 
   <body>
